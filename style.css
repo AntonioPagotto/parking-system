@@ -1,0 +1,100 @@
+body{
+    background: #1a1a1a;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+h1, h2, h3, a, p{
+    color: white;
+}
+#nav{
+    display:flex;
+    flex-wrap:wrap;
+}
+#nav-e{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50%;
+    background-color: #e35f21;
+    height: 600px;
+}
+#nav-title{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+#nav-title h1{
+    font-weight: 700;
+    font-size: 50px;
+    border-bottom: 2px solid white;
+}
+#nav-content{
+    display:flex;
+    flex-wrap: wrap;
+    flex-flow: column nowrap;
+    width: 80%;
+}
+#nav-logo{
+    width: 50%;
+    height: 600px;
+    background: #1a1a1a;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+#nav-logo img{
+    max-width: 600px;
+}
+#nav-bar{
+    color: #fff;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+}
+#nav-bar a {
+    margin: 40px 60px 0 0;
+}
+/* icons */
+.square-icons {
+    padding: 10px; /* espaçamento */  
+    font-size: 18px; /* tamanho do icone */  
+    width: 18px;  /* tamanho do fundo */  
+    text-align: center;  
+    text-decoration: none;  
+    margin: 5px 2px; /* espaçamento entre eles */  
+    color: #fff; /*cor do icone */
+    background: #1a1a1a;
+    border-radius:20px;
+}
+  .square-icons:hover { 
+      opacity: 0.7;  
+}
+
+/* slide */
+#slider {position: relative; z-index: 1;}
+#slider a { position: absolute; top: 0; left: 0; opacity: 0;filter:alpha(opacity=0);}
+.ativo {opacity: 1!important; filter:alpha(opacity=100)!important;}
+
+figure:hover {opacity: 0.5;filter:alpha(opacity=76);}
+    figure {
+    max-width: 100%;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    margin: 0px auto;
+}
+
+
+
+@media only screen and (max-width:500px){
+    #nav-e, #nav-logo{
+        width: 100%;
+    }
+    #nav-logo{
+        height: 250px;
+    }
+    #nav-bar a {
+        margin: 40px 30px 0 0;
+    }
+}
