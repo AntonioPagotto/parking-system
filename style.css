@@ -5,6 +5,11 @@ body{
 h1, h2, h3, a, p{
     color: white;
 }
+h1{
+    font-weight: 700;
+    font-size: 50px;
+    border-bottom: 2px solid white;
+}
 #nav{
     display:flex;
     flex-wrap:wrap;
@@ -22,11 +27,6 @@ h1, h2, h3, a, p{
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-}
-#nav-title h1{
-    font-weight: 700;
-    font-size: 50px;
-    border-bottom: 2px solid white;
 }
 #nav-content{
     display:flex;
@@ -84,7 +84,38 @@ figure:hover {opacity: 0.5;filter:alpha(opacity=76);}
     overflow: hidden;
     margin: 0px auto;
 }
-
+.container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    width: 40%;
+}
+.container img {
+    width: 115px;
+}
+#slider div {
+    height: 460px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display:flex;
+    flex-wrap: wrap;
+}
+.sld-item {
+    background-image: url("img/b1-sld.png");
+    width: 100%;
+    height: 460px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+.sld-item:hover {
+    opacity: 0.5;
+}
+   /* background-image: url("img/b2-sld.png"); */
 
 
 @media only screen and (max-width:500px){

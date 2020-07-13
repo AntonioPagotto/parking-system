@@ -1,3 +1,4 @@
+/*
 function setaImagem(){
     var settings = {
         primeiraImg: function(){
@@ -72,3 +73,22 @@ function setaImagem(){
 }
 
 window.addEventListener("load",setaImagem,false);
+*/
+
+/*slider*/
+    var mudou = false;
+function mudar(){
+    var bg = document.querySelector('.sld-item')
+
+    if(mudou == false){   
+
+    bg.style.backgroundImage = 'url("img/b2-sld.png")'
+    mudou = true;
+
+    } else {
+
+        bg.style.backgroundImage = 'url("img/b1-sld.png")'
+        mudou = false;
+
+    }
+}
