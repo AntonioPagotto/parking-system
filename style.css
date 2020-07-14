@@ -4,6 +4,7 @@ body{
 }
 h1, h2, h3, a, p{
     color: white;
+    text-decoration: none;
 }
 h1{
     font-weight: 700;
@@ -33,6 +34,18 @@ h1{
     flex-wrap: wrap;
     flex-flow: column nowrap;
     width: 80%;
+}
+
+#nav-logo2{
+    width: 50%;
+    height: 600px;
+    background: #1a1a1a73;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    background-image: url("img/b2-sld.png");
+    background-size: cover;
 }
 #nav-logo{
     width: 50%;
@@ -117,7 +130,31 @@ figure:hover {opacity: 0.5;filter:alpha(opacity=76);}
 }
    /* background-image: url("img/b2-sld.png"); */
 
-
+#container-system{
+    width: 100%;
+    height: 500px;
+    background: #1a1a1a;
+}
+#container-system div{
+    margin-top:40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#container-system div span{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 5px solid white;
+    border-radius:20px;
+    width: 70%;
+    margin: auto;
+    margin-top:20px;
+}
+#container-system div span a{
+    margin: 0 60px;
+    line-height: 60px;
+}
 @media only screen and (max-width:500px){
     #nav-e, #nav-logo{
         width: 100%;

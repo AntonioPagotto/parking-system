@@ -1,94 +1,17 @@
-/*
-function setaImagem(){
-    var settings = {
-        primeiraImg: function(){
-            elemento = document.querySelector("#slider a:first-child");
-            elemento.classList.add("ativo");
-            this.legenda(elemento);
-        },
 
-        slide: function(){
-            elemento = document.querySelector(".ativo");
-
-            if(elemento.nextElementSibling){
-                elemento.nextElementSibling.classList.add("ativo");
-                settings.legenda(elemento.nextElementSibling);
-                elemento.classList.remove("ativo");
-            }else{
-                elemento.classList.remove("ativo");
-                settings.primeiraImg();
-            }
-
-        },
-
-        proximo: function(){
-            clearInterval(intervalo);
-            elemento = document.querySelector(".ativo");
-
-            if(elemento.nextElementSibling){
-                elemento.nextElementSibling.classList.add("ativo");
-                settings.legenda(elemento.nextElementSibling);
-                elemento.classList.remove("ativo");
-            }else{
-                elemento.classList.remove("ativo");
-                settings.primeiraImg();
-            }
-            intervalo = setInterval(settings.slide,4000);
-        },
-
-        anterior: function(){
-            clearInterval(intervalo);
-            elemento = document.querySelector(".ativo");
-
-            if(elemento.previousElementSibling){
-                elemento.previousElementSibling.classList.add("ativo");
-                settings.legenda(elemento.previousElementSibling);
-                elemento.classList.remove("ativo");
-            }else{
-                elemento.classList.remove("ativo");                     
-                elemento = document.querySelector("a:last-child");
-                elemento.classList.add("ativo");
-                this.legenda(elemento);
-            }
-            intervalo = setInterval(settings.slide,4000);
-        },
-
-        legenda: function(obj){
-            var legenda = obj.querySelector("img").getAttribute("alt");
-            document.querySelector("figcaption").innerHTML = legenda;
-        }
-
-    }
-
-    //chama o slide
-    settings.primeiraImg();
-
-    //chama a legenda
-    settings.legenda(elemento);
-
-    //chama o slide à um determinado tempo
-    var intervalo = setInterval(settings.slide,10000);
-    document.querySelector(".next").addEventListener("click",settings.proximo,false);
-    document.querySelector(".prev").addEventListener("click",settings.anterior,false);
-}
-
-window.addEventListener("load",setaImagem,false);
-*/
 
 /*slider*/
-    var mudou = false;
-function mudar(){
-    var bg = document.querySelector('.sld-item')
 
-    if(mudou == false){   
-
-    bg.style.backgroundImage = 'url("img/b2-sld.png")'
-    mudou = true;
-
-    } else {
-
-        bg.style.backgroundImage = 'url("img/b1-sld.png")'
-        mudou = false;
-
-    }
+var mudou = false;
+function initial() {
+    setInterval(function mudar() {
+        var bg = document.querySelector('.sld-item')
+        if (mudou == false) {
+            bg.style.backgroundImage = 'url("img/b2-sld.png")'
+            mudou = true;
+        } else {
+            bg.style.backgroundImage = 'url("img/b1-sld.png")'
+            mudou = false;
+        }
+    }, 3000);
 }
