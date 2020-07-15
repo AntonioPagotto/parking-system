@@ -35,7 +35,25 @@ h1{
     flex-flow: column nowrap;
     width: 80%;
 }
-
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #e35f21;
+    color:white;
+    text-align: center;
+    line-height: 100px;
+}
+#nav-logo3{
+    width: 50%;
+    height: 600px;
+    background: #1a1a1a73;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    background-image: url("img/1495.jpg");
+    background-size: cover;
+}
 #nav-logo2{
     width: 50%;
     height: 600px;
@@ -125,23 +143,85 @@ figure:hover {opacity: 0.5;filter:alpha(opacity=76);}
     align-content: center;
     
 }
-.sld-item:hover {
+.sld-item img{
+    max-width: 200px;
+    height:120px;
+}
+.sld-item .spanitem{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 220px;
+}
+.sld-item #barra{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #1a1a1a73;
+    width: 100%;
+    height: 219px;
+    padding-top: 50px;
+
+}
+.sld-item span:hover{
     opacity: 0.5;
 }
    /* background-image: url("img/b2-sld.png"); */
 
 #container-system{
     width: 100%;
-    height: 500px;
-    background: #1a1a1a;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+
 }
 .btn{
     width: 100px;
     height: 30px;
 
+}
+h3 {
+    font-size: 25px;
+    margin: 0 40px;
+}
+.preto{
+    color:#1a1a1a;
+}
+#formulario{
+    display: flex;
+    justify-content: center;
+    border-radius:100px;
+    line-height: 40px;
+    padding:20px 0;
+    margin-bottom: 10px;
+}
+#formulario input{
+    border-radius:20px;
+    border:none;
+}
+#add{
+    margin-left:20px;
+    background: #e35f21;
+    color:white;
+}
+#rformulario{
+    margin: auto;
+    width: 80%; 
+}
+.container-table{
+    background-color: #e35f21;
+    color:white;
+    border-radius:20px;
+}
+.btn-remover{
+    line-height: 40px;
+    border: none;
+    color: white;
+    background: #1a1a1a;
+    border-radius: 8px;
+    padding: 0px 20px;
+}
+#resultados{
+    text-align:center;
 }
 @media only screen and (max-width:500px){
     #nav-e, #nav-logo{

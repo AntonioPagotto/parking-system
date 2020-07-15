@@ -47,23 +47,23 @@
     <section id="container-system">
 
         <form id="formulario">
-            <label>Cliente:</label>
+            <label><h3>Cliente:</h3></label>
             <input id="cCliente" type="text" name="client">
-            <label>Carro:</label>
+            <label><h3>Carro:</h3></label>
             <input id="cModelo" type="text" name="car">
-            <label>Placa:</label>
+            <label><h3>Placa:</h3></label>
             <input id="cPlaca" type="text" name="placa">
-            <input type="button" value="Adicionar" onclick="estacionar()">
+            <input id="add" type="button" value="Adicionar" onclick="estacionar()">
         </form>
-        <div>
-            <table>
+        <div class="container-table"> 
+            <table id="rformulario"> 
                 <thead>
                     <tr>
-                        <th>Cliente</th>
-                        <th>Modelo</th>
-                        <th>Placa</th>
-                        <th>Entrada</th>
-                        <th>Finalizar</th>
+                        <th><h3>Cliente</h3></th>
+                        <th><h3>Modelo</h3></th>
+                        <th><h3>Placa</h3></th>
+                        <th><h3>Entrada</h3></th>
+                        <th><h3>Encerrar</h3></th>
                     </tr>
                 </thead>
                 <tbody id="resultados"></tbody>

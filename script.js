@@ -58,6 +58,8 @@ function estacionar(e) {
 function remover(placa) {
     var patio = JSON.parse(localStorage.getItem('patio'))
 
+
+    
     for (var i = 0; i < patio.length; i++) {
         if (patio[i].placa == placa) {
             patio.splice(i, 1)
@@ -69,6 +71,7 @@ function remover(placa) {
 function carregar() {
     var estacionados = JSON.parse(localStorage.getItem('patio')); //pegando a array no localstorage (convertendo p objt para modifica-lo)
     var patioResultado = document.getElementById('resultados');
+
 
     patioResultado.innerHTML = ''
 
@@ -82,7 +85,6 @@ function carregar() {
             '<td>' + modelo + '</td>' +
             '<td>' + placa + '</td>' +
             '<td>' + hora + ':' + minutos + '</td>' +
-            '<td><input type="button" value="Remover" onclick="remover(\'' + placa + '\')"></td></tr>'
-
+            '<td><input class="btn-remover" type="button" value="Remover" onclick="remover(\'' + placa + '\')"></td></tr>'
     }
 }

@@ -20,7 +20,7 @@
                     <a>HOME</a>
                     <a>SOBRE</a>
                     <a>ONDE ESTACIONAR?</a>
-                    <a href="system.html">PAINEL</a>
+                    <a href="#container-system">PAINEL</a>
                 </div>
                 <div id="nav-title">
                     <h1>Bem-vindo!</h1>
@@ -42,15 +42,93 @@
         </div>
     </header>
     <section>
-        <div id="slider" onclick="mudar()">
+        <div id="slider">
             <div class="sld-item">
+                <span id="barra">
+                    <span class="spanitem">
+                        <img src="img/i1.png">
+                        <h3>Acessibilidade</h3>
+                    </span>
+                    <span class="spanitem">
+                        <img src="img/i2.png">
+                        <h3>Segurança</h3>
+                    </span>
+                    <span class="spanitem">
+                        <img src="img/i3.png">
+                        <h3>Economia</h3>
+                    </span>
+                    <span class="spanitem">
+                        <img src="img/i4.png">
+                        <h3>Suporte</h3>
+                    </span>
+                </span>
             </div>
         </div>
 
 
+        <div id="nav">
+            <div id="nav-logo3">
+                <img src="img/logob2.png" alt="">
+            </div>
+            <div id="nav-e">
+                <div id="nav-title">
+                    <h1>Gerencie seu Estacionamento</h1>
+                    <p>Seja bem-vindo ao nosso sistema, aqui você poderá utilizar a ferramenta para gerenciar seu
+                        estacionamento
+                        gratuitamente.
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer></footer>
+    <section id="container-system">
+
+        <form id="formulario">
+            <label>
+                <h3>Cliente:</h3>
+            </label>
+            <input id="cCliente" type="text" name="client">
+            <label>
+                <h3>Carro:</h3>
+            </label>
+            <input id="cModelo" type="text" name="car">
+            <label>
+                <h3>Placa:</h3>
+            </label>
+            <input id="cPlaca" type="text" name="placa">
+            <input id="add" type="button" value="Adicionar" onclick="estacionar()">
+        </form>
+        <div class="container-table">
+            <table id="rformulario">
+                <thead>
+                    <tr>
+                        <th>
+                            <h3>Cliente</h3>
+                        </th>
+                        <th>
+                            <h3>Modelo</h3>
+                        </th>
+                        <th>
+                            <h3>Placa</h3>
+                        </th>
+                        <th>
+                            <h3>Entrada</h3>
+                        </th>
+                        <th>
+                            <h3>Encerrar</h3>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="resultados"></tbody>
+            </table>
+        </div>
+        <ul id="myList">
+        </ul>
+
+    </section>
+
+    <footer>&copy; Antonio Pagotto - Uma página desenvolvida para estudos.</footer>
 
 
     <script src="script.js"></script>
