@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
-<body>
+<body onload="carregar()">
 
     <header>
         <div id="nav">
@@ -45,10 +45,33 @@
     </header>
 
     <section id="container-system">
+
+        <form id="formulario">
+            <label>Cliente:</label>
+            <input id="cCliente" type="text" name="client">
+            <label>Carro:</label>
+            <input id="cModelo" type="text" name="car">
+            <label>Placa:</label>
+            <input id="cPlaca" type="text" name="placa">
+            <input type="button" value="Adicionar" onclick="estacionar()">
+        </form>
         <div>
-            <span> <a>CARRO</a> <a>PLACA</a> <a>ENTRADA</a> <a>AÇÃO</a> </span>
-            <span> <a>CARRO</a> <a>PLACA</a> <a>ENTRADA</a> <a>AÇÃO</a> </span>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cliente</th>
+                        <th>Modelo</th>
+                        <th>Placa</th>
+                        <th>Entrada</th>
+                        <th>Finalizar</th>
+                    </tr>
+                </thead>
+                <tbody id="resultados"></tbody>
+            </table>
         </div>
+        <ul id="myList">
+        </ul>
+
     </section>
 
     <script src="script.js"></script>
